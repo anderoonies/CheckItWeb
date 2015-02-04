@@ -11,6 +11,9 @@ def home_page(request,name):
     elif name=='ketch':
         product = 'Ketch'
 
+    if product==None:
+        product=name
+
     context = {'name':product}
     return render(request, 'index.html', context)
 
