@@ -4,6 +4,6 @@ from pages import views
 
 urlpatterns = patterns(
 	'pages.views',
-    url('^$', TemplateView.as_view(template_name='index.html')),
-    url(r'submit_email/$', views.submit_email)
+    url('^(?P<name>\w+)$', views.home_page, name="Checkit"),
+    url('^(?P<name>\w+)/submit_email/$', views.submit_email)
 )
