@@ -36,7 +36,7 @@ $(document).ready(function() {
 function create_post() {
     console.log("create post is working!") // sanity check
     $.ajax({
-        url : "submit_email/", // the endpoint
+        url : location.href + "/submit_email/", // the endpoint
         type : "POST", // http method
         data : { 
             email : $('#email-text').val(),
