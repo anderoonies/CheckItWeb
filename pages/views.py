@@ -5,7 +5,6 @@ from pages.models import Email
 
 import json
 
-<<<<<<< HEAD
 def home_page(request,name):
     if name=='cogo':
         product = 'Cogo'
