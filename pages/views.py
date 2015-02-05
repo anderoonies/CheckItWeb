@@ -6,13 +6,12 @@ from pages.models import Email
 import json
 
 def home_page(request,name):
+    
+    product = 'Checkit'
     if name=='cogo':
         product = 'Cogo'
     elif name=='ketch':
         product = 'Ketch'
-
-    if product==None:
-        product=name
 
     context = {'name':product}
     return render(request, 'index.html', context)
