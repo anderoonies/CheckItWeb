@@ -1,4 +1,4 @@
 #Checkit Web
 Web submodule of NUvention project Checkit
 
-[Heorku link](checkit-app.herokuapp.com/ketch)
+[Heorku link](http://checkit-app.herokuapp.com/ketch)
